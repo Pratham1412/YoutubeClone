@@ -11,7 +11,7 @@ export const uploadVideo = async (req, res, next) => {
         filetype: req.file.mimetype,
         fileSize: req.file.size,
         videoChanel: req.body.chanel,
-        Uploder: req.body.Uploder,
+        Uploader: req.body.Uploader,
       })
       await file.save();
       // console.log("Done")
