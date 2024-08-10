@@ -5,7 +5,7 @@ import cors from 'cors'
 import bodyParser from "body-parser";
 import videoRoutes from './routes/video.js'
 import userRoutes from './routes/user.js'
-import commentroutes from './routes/comment.js'
+import commentsRoutes from './routes/comment.js'
 
 import path from 'path'
 
@@ -24,7 +24,7 @@ app.get('/',(req, res) => {
 app.use(bodyParser.json())
 app.use('/user',userRoutes)
 app.use('/video',videoRoutes)
-app.use('/comment',commentroutes)
+app.use('/comment',commentsRoutes)
 
 const PORT= process.env.PORT
 
